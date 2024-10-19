@@ -19,9 +19,13 @@ export const HeroOrbit = ({
 }>) => {
   return (
     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-20">
+      {/* Orbiting div */}
       <div
         className={twMerge(shouldOrbit === true && "animate-spin")}
-        style={{ animationDirection: orbitDuration }}
+        style={{
+          animationDuration: orbitDuration, // Correctly apply orbit duration
+          animationDirection: "normal", // Add default or custom direction if needed
+        }}
       >
         <div
           className="flex items-start justify-start"
@@ -31,9 +35,12 @@ export const HeroOrbit = ({
             width: `${size}px`,
           }}
         >
+          {/* Spinning div */}
           <div
             className={twMerge(shouldSpin === true && "animate-spin")}
-            style={{ animationDuration: spinDuration }}
+            style={{
+              animationDuration: spinDuration, // Correctly apply spin duration
+            }}
           >
             <div
               className="inline-flex"
