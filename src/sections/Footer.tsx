@@ -1,23 +1,5 @@
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
-
-const footerLinks = [
-  {
-    title: "Twitter",
-    href: "",
-  },
-  {
-    title: "LinkedIn",
-    href: "",
-  },
-  {
-    title: "Facebook",
-    href: "",
-  },
-  {
-    title: "Github",
-    href: "",
-  },
-];
+import { footerLinks } from "@/utils/constants";
 
 export const Footer = () => {
   return (
